@@ -1,17 +1,16 @@
-name: Labwork_6
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-jobs:
-  build:
-    name: "Ubuntu/18.04/Static/X64/Release"
-    runs-on: ubuntu-latest
-
-    steps:
+name: Labwork_6 
+ 
+on: 
+  push: 
+    branches: [ "main" ] 
+  pull_request: 
+    branches: [ "main" ] 
+ 
+jobs: 
+  build: 
+    name: "Ubuntu/18.04/Static/X64/Release" 
+    runs-on: ubuntu-latest 
+    steps: 
       - uses: actions/checkout@v2 
       - name: Create Work Dir 
         run: mkdir build 
